@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
-import { Routes, Route, Navigate } from "react-router-dom";
-// import { navbar } from "../utils/navbar";
+// import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../components/Home";
 import About from "../components/About";
 import Service from "../components/Service";
@@ -32,21 +31,5 @@ const Root = () => {
 };
 export default Root;
 
-/* <Routes>
-                <Route path="/" element={<Navigate to={'/home'}/>}/>
-                <Route element={<Navbar/>}>
-                    {
-                        navbar.map(({id,element,path})=>{
-                            return(
-                                <Route key={id} path={path} element={element}/>
-                            )
-                        })
-                    }
-                </Route>
-            </Routes> */
 
 
-
-            {/* {navbar.map((item) => {
-				return item.element;
-			})} */}

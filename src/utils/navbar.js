@@ -1,8 +1,7 @@
-import Generic from "../pages/Generic";
 import Home from "../components/Home";
 import About from "../components/About";
 import Service from "../components/Service";
-import Skill from "../components/Skill";
+// import Skill from "../components/Skill";
 import Testimonial from "../components/Testimonial";
 import Team from "../components/Team";
 import Contact from "../components/Contact";
@@ -36,15 +35,15 @@ export const navbar = [
 		hidden: false,
 		private: true,
 	},
-	{
-		id: 4,
-		title: "Skill",
-		element: <Skill />,
-		path: ".skill",
-		search: "?",
-		hidden: false,
-		private: true,
-	},
+	// {
+	// 	id: 4,
+	// 	title: "Skill",
+	// 	element: <Skill />,
+	// 	path: ".skill",
+	// 	search: "?",
+	// 	hidden: false,
+	// 	private: true,
+	// },
 	{
 		id: 5,
 		title: "Testimonial",

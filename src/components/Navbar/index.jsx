@@ -10,8 +10,6 @@ import {
 import { navbar } from "../../utils/navbar";
 import Button from "../../Generic/Button";
 import { useNavigate, Outlet } from "react-router-dom";
-// import  Button  from '../Generic/Button';
-// import { ReactComponent as Logo } from '../../assets/icons/Logo.svg';
 
 const Navbar = () => {
 	const navigate = useNavigate();
