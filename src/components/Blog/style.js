@@ -9,8 +9,7 @@ const Card = styled.div`
   max-width: 390px;
   width: fit-content;
   height: 580px;
-  position: relative;
-  left: 55px;
+  /* position: relative; */
   -webkit-box-shadow: 0px 0px 12px 1px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 0px 12px 1px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 0px 12px 1px rgba(34, 60, 80, 0.2);
@@ -30,6 +29,7 @@ const Card = styled.div`
     height: 440px;
     left: 75px;
   }
+ 
 `
 const Imgs = styled.img`
 transition-duration: 0.5s;
@@ -52,10 +52,17 @@ const Container = styled.div`
     .title{
         width: 600px;
         line-height:50px;
+        @media (max-width:675px){
+            width: 310px;
+            font-size: 25px;
+        }
     }
     .color{
         margin-bottom: 20px;
         color: var(--primaryColor);
+        @media (max-width:675px){
+            font-size: 15px;
+        }
     }
     .border{
         margin-top: 20px;
@@ -74,6 +81,12 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   user-select: none;
+  @media screen and (max-width:812px){
+    button{
+        display: none;
+    }
+    
+  }
     .alice-carousel{
       width: 100%;
       @media screen and (max-width:1366px){
@@ -110,82 +123,82 @@ const Wrapper = styled.div`
   }
 `
 
-const Icon = styled.div``;
+// const Icon = styled.div``;
 
-Icon.Left = styled(LeftArrow)`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 47%;
-	left: -90px;
-	transform: translate(100%, -50%);
-	width: 45px;
-	height: 45px;
-	padding: 12px;
-	color: white;
-	background: white;
-	padding: 12px;
-	/* opacity: 0.5; */
-	border-radius: 50%;
-	z-index: 999;
-	cursor: pointer;
-    border: 1px solid #E6E9EC;
-    -webkit-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-	:hover {
-		/* opacity: 0.77; */
-    background-color: var(--primaryColor);
-    fill: #ffffff;
-	}
-	& path {
-		fill: #0d263b;
-	}
-    @media screen and (max-width:1366px){
-        left: -25px;
-        top: 40%;
-        width: 35px;
-        height: 35px;
-    }
-`;
-Icon.Right = styled(RightArrow)`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 46%;
-	right: -100px;
-	transform: translate(-100%, -40%);
-	width: 45px;
-	height: 45px;
-	padding: 12px;
-	color: white;
-	background: white;
-	padding: 12px;
-	/* opacity: 0.5; */
-	border-radius: 50%;
-	z-index: 999;
-	cursor: pointer;
-    -webkit-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-    -moz-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-    box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
-        border: 1px solid #E6E9EC;
-	:hover {
-		/* opacity: 0.97; */
-    background-color: var(--primaryColor);
-    fill: #ffffff;
-	}
-	& path {
-		fill: #0d263b;
-	}
-    @media screen and (max-width:1366px){
-        right: -25px;
-        top: 40.5%;
-        width: 35px;
-        height: 35px;
-  }
-`;
+// Icon.Left = styled(LeftArrow)`
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	position: absolute;
+// 	top: 47%;
+// 	left: -90px;
+// 	transform: translate(100%, -50%);
+// 	width: 45px;
+// 	height: 45px;
+// 	padding: 12px;
+// 	color: white;
+// 	background: white;
+// 	padding: 12px;
+// 	/* opacity: 0.5; */
+// 	border-radius: 50%;
+// 	z-index: 999;
+// 	cursor: pointer;
+//     border: 1px solid #E6E9EC;
+//     -webkit-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
+//     -moz-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
+//     box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
+// 	:hover {
+// 		/* opacity: 0.77; */
+//     background-color: var(--primaryColor);
+//     fill: #ffffff;
+// 	}
+// 	& path {
+// 		fill: #0d263b;
+// 	}
+//     @media screen and (max-width:1366px){
+//         left: -25px;
+//         top: 40%;
+//         width: 35px;
+//         height: 35px;
+//     }
+// `;
+// Icon.Right = styled(RightArrow)`
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	position: absolute;
+// 	top: 46%;
+// 	right: -100px;
+// 	transform: translate(-100%, -40%);
+// 	width: 45px;
+// 	height: 45px;
+// 	padding: 12px;
+// 	color: white;
+// 	background: white;
+// 	padding: 12px;
+// 	/* opacity: 0.5; */
+// 	border-radius: 50%;
+// 	z-index: 999;
+// 	cursor: pointer;
+//     -webkit-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
+//     -moz-box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
+//     box-shadow: 0px 0px 11px 2px rgba(34, 60, 80, 0.2);
+//         border: 1px solid #E6E9EC;
+// 	:hover {
+// 		/* opacity: 0.97; */
+//     background-color: var(--primaryColor);
+//     fill: #ffffff;
+// 	}
+// 	& path {
+// 		fill: #0d263b;
+// 	}
+//     @media screen and (max-width:1366px){
+//         right: -25px;
+//         top: 40.5%;
+//         width: 35px;
+//         height: 35px;
+//   }
+// `;
 
 
 const Carousel = styled(AliceCarousel)`
@@ -241,4 +254,4 @@ margin-top: 20px;
     }
 `
 
-export {Container,Carousel,Wrapper,Card,Imgs,Icon,Title,Btn}
+export {Container,Carousel,Wrapper,Card,Imgs,Title,Btn}

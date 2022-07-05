@@ -7,6 +7,7 @@ import {
 	CardSection,
 	Card,
 	Title,
+	TitleWrap,
 } from "./style";
 import HomeOne from "../../assets/img/homeone.png";
 import HomeTwo from "../../assets/img/hometwo.png";
@@ -16,6 +17,7 @@ const Corusel = () => {
 	const slider = useRef("click");
 	return (
 		<Wrapper className="home">
+			<TitleWrap>
 			<Title>
 				<span>Welcome To Best It Solution Company</span>
 				<h1 className="home-title">
@@ -29,7 +31,10 @@ const Corusel = () => {
 				<Button width={"150px"} type={"primary"}>
 					Descover More
 				</Button>
+				
 			</Title>
+			</TitleWrap>
+
 			<Icons>
 				<Icons.Left onClick={() => slider.current.prev()} />
 				<Icons.Right onClick={() => slider.current.next()} />

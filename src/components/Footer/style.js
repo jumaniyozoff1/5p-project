@@ -1,4 +1,6 @@
+
 import styled from "styled-components";
+import { ReactComponent as navlogo } from "../../assets/icon/navlogo.svg";
 
 const Container = styled.div`
   width: 100%;
@@ -18,12 +20,48 @@ const BacImg = styled.img`
 `;
 
 const Wrapper = styled.div`
-  padding: 60px 50px 0 150px;
+  padding: 100px 150px 50px 50px;
   color: white !important;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: flex-start;
+  .his{
+    display: flex;
+    .title{
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+  }
+  .logo{
+    margin-top: -30px;
+  }
+  .title{
+    font-size: 24px;
+  }
 `;
 
-export { Container, BacImg, Wrapper };
+const Item = styled.a`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: fit-content;
+  margin-bottom: 20px;
+  width: 300px;
+  font-size: 20px;
+  color: #fff;
+  .s{
+    margin-right: 10px;
+  }
+`
+
+const SmallLogo = styled.img`
+  width: 80px;
+  height: 80px;
+`;
+
+const Navlogo = styled(navlogo)`
+  cursor: pointer;
+`;
+
+export { Container, BacImg, Wrapper, Navlogo, Item, SmallLogo };

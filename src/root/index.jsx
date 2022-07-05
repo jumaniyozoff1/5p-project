@@ -20,12 +20,12 @@ const Root = () => {
             <About/>
             <Service/>
             {/* <Skill/> */}
-            <Testimonial/>
+            {/* <Testimonial/> */}
             <Team/>
             <Contact/>
             <Blog/>
             <FooterTop/>
-            <Footer/>
+            {/* <Footer/> */}
 		</div>
 	);
 };

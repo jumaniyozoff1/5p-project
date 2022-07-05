@@ -1,34 +1,36 @@
 
 import styled from "styled-components";
 const Container = styled.div`
-  /* max-width: 1440px; */
-  position: relative;
+  /* position: relative; */
   margin-top: 100px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+
+
+ 
 `
 
 const Wrapper = styled.div`
+  padding:0 130px;
   border-radius: 3px;
   z-index: 1;
-  max-width: 1350px;
-  width: 100%;
-  height: 700px;
+  width: 1200px;
+  height: 500px;
   padding: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 2px solid red; */
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.2);
-  @media screen and (max-width:1366px){
-    max-width: 1200px;
-    height: 600px;
+  @media screen and (max-width:900px){
+    height: fit-content;
+    flex-direction: column;
+    gap: 20px;
   }
 `
 
@@ -40,14 +42,14 @@ const Register = styled.div`
   input{
     border: 1px solid #ddd;
     background-color: white;
-    width: 600px;
-    height: 50px;
+    width: 400px;
+    height: 50px; 
     font-size: 17px;
     padding-left: 20px;
     border-radius: 5px;
     outline: none;
-    @media screen and (max-width:1366px){
-      width: 550px;
+    @media screen and (max-width:500px){
+      width:250px;
       height: 40px;
       font-size: 15px;
     }
@@ -66,9 +68,13 @@ const Register = styled.div`
 `
 
 const Img = styled.img`
-    @media screen and (max-width:1366px){
-      width: 500px;
-  }
+  width: 400px;
+  height: 400px;
+  @media screen and (max-width:500px){
+      width:250px;
+      height: 250px;
+      font-size: 15px;
+    }
 `
 
 

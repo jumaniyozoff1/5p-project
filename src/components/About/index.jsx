@@ -25,14 +25,14 @@ const About = () => {
 							<Icon.Arrow/>
 							<h3>Routine and business plan</h3>
 						</span>
-						<p className="description">We provides you with </p>
+						<p className="description we">We provides you with </p>
 					</Items.Item>
 					<Items.Item>
 						<span>
 							<Icon.Arrow/>
 							<h3>Routine 25 years working</h3>
 						</span>
-						<p className="description">We provides you with </p>
+						<p className="description we">We provides you with </p>
 					</Items.Item>
 				</Items>
 				<Items>
@@ -41,19 +41,19 @@ const About = () => {
 							<Icon.Arrow/>
 							<h3>Routine and business data</h3>
 						</span>
-						<p className="description">We provides you with </p>
+						<p className="description we">We provides you with </p>
 					</Items.Item>
 					<Items.Item>
 						<span>
 							<Icon.Arrow/>
 							<h3>Routine and business team</h3>
 						</span>
-						<p className="description">We provides you with </p>
+						<p className="description we">We provides you with </p>
 					</Items.Item>
 				</Items>
 				<div>
 					<span></span>
-					<Button type={"primary"} width={"180px"}>
+					<Button type={"primary"} width={"180px"} className='btn'>
 						About More
 					</Button>
 				</div>

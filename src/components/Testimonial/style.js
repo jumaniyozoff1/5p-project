@@ -154,6 +154,11 @@ const Teacher = styled.div`
         margin-top: 0px;
         margin-bottom: 150px;
     }
+    @media screen and (max-width:1366px){
+        width: 600px;
+        margin-top: 0px;
+        margin-bottom: 150px;
+    }
     }
 `
 

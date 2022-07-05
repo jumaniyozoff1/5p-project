@@ -31,6 +31,9 @@ const Header = styled.header`
 const Navlink = styled.a`
 	text-decoration: none;
 	color: white;
+	@media (max-width: 980px){
+		display: none;
+	}
 `;
 
 const Wrapper = styled.div`

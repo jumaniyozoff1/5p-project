@@ -4,10 +4,13 @@ import AliceCarousel from 'react-alice-carousel';
 
 
 const Card = styled.div`
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
   width: 370px;
   height: 382px;
-  position: relative;
-  left: 55px;
+  /* left: 55px; */
   .card_text{
   margin-top: 20px;
   color: white;
@@ -18,19 +21,18 @@ const Card = styled.div`
   line-height: 28px;
   text-align: center;
   }
-  @media screen and (max-width:1366px){
+  /* @media screen and (max-width:1366px){
   position: relative;
-        left: 70px;
-}
+    left: 70px;
+} */
 `
 const Imgs = styled.img`
-transition-duration: 0.5s;
-    &:hover{
+    transition-duration: 0.5s;
+    width: 300px;
+    /* &:hover{
         filter: brightness(40%);
-    }
-    @media screen and (max-width:1366px){
-        width: 300px;
-    }
+    } */
+
 `
 
 const Container = styled.div`
@@ -42,11 +44,18 @@ const Container = styled.div`
     flex-direction: column;
     .title{
         width: 600px;
-        line-height:50px;
+        /* line-height:50px; */
+        @media (max-width:675px){
+            width: 310px;
+            font-size: 25px;
+        }
     }
     .color{
         margin-bottom: 20px;
         color: var(--primaryColor);
+        @media (max-width:675px){
+            font-size: 15px;
+        }
     }
     .border{
         margin-top: 20px;
@@ -58,44 +67,15 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   margin: 32px 0px;
-  width: 1440px;
-  position: relative;
-  height: fit-content;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  user-select: none;
-    .alice-carousel{
-    width: 100%;
-    @media screen and (max-width:1366px){
-      max-width: 1340px;
-      width: 100%;
-      height: 350px;
-    }
-    }
-    @media screen and (max-width:1366px){
-      max-width: 1340px;
-      display: flex;
-      align-items: center;
-    }
-    .alice-carousel__dots-item{
-        background: #ff491758;
-        border-radius: 0%;
-        width: 10px;
-        height: 10px;
-        &:hover{
-            background: var(--primaryColor);
-        }
-        @media screen and (max-width:1366px){
-            width: 8px;
-            height: 8px;
-            margin-bottom:100px;
-        }
-    }
-    .alice-carousel__dots-item.__active{
-        background: var(--primaryColor);
-        border-radius: 0%;
-    }
+  justify-content: center;
+  text-align: center;
+  /* text-align: center; */
+  /* width: 1440px; */
+  /* position: relative; */
+  height: fit-content;
 `
 const Carousel = styled(AliceCarousel)`
     display: flex;
@@ -105,14 +85,14 @@ const Carousel = styled(AliceCarousel)`
 
 
 const Border = styled.div`
-    width:100%;
-    height: 100%;
-    /* height: 80px; */
+    width:fit-content; 
+    height:fit-content;
     opacity: 0;
+    margin-top: 36px;
     background: none;
     position: absolute;
     display: flex;
-    z-index: 1000;
+    /* z-index: 1000; */
     top: 0%;
     flex-direction: column;
     justify-content: center;

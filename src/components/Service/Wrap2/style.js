@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 const Container = styled.div``;
@@ -11,7 +12,10 @@ const Wrapper = styled.div`
 const Block = styled.div`
   position: relative;
   .sub-title {
-    color: var(--primaryColor);
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    :hover{color: var(--primaryColor);}
   }
   .description {
     width: 600px;

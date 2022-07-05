@@ -1,7 +1,6 @@
-
 import styled from "styled-components";
 import { ReactComponent as phone } from "../../assets/icon/phone.svg";
-import { ReactComponent as eamil } from "../../assets/icon/email.svg";
+import { ReactComponent as email } from "../../assets/icon/email.svg";
 
 const Container = styled.div`
     display: flex;
@@ -37,6 +36,10 @@ const Title = styled.div`
     text-align: center;
     background: none;
     width: 600px;
+    @media (max-width:675px){
+        width: 300px;
+        font-size: 30px;
+    }
     &:hover{
         color:var(--primaryColor) ;
         cursor: pointer;
@@ -54,6 +57,11 @@ const Title = styled.div`
         .icon{
             width: 50px;
             height: 50px;
+        }
+    }
+    .small-description{
+        @media (max-width:675px){
+            font-size: 12px;
         }
     }
 `
@@ -75,16 +83,26 @@ Title.email = styled.div`
         height: 30px;
         background-color: var(--primaryColor);
     }
+   
+
 `
 const Icon = styled.img``
 
 Icon.Phone = styled (phone)`
     width: 30px;
     height: 30px;
+    @media (max-width:675px){
+        width: 20px;
+        height: 20px;
+    }
 `
-Icon.Email = styled (eamil)`
+Icon.Email = styled (email)`
     width: 30px;
     height: 30px;
+    @media (max-width:675px){
+        width: 20px;
+        height: 20px;
+    }
 `
 const Img = styled.img`
     top: 0;
