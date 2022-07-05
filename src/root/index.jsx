@@ -18,7 +18,7 @@ const Root = () => {
 			<Navbar></Navbar>
             <Home/>
             <About/>
-            <Service/>
+            {/* <Service/> */}
             {/* <Skill/> */}
             {/* <Testimonial/> */}
             <Team/>
