@@ -71,6 +71,14 @@ Title.email = styled.div`
     align-items: center;
     justify-content: center;
     gap: 40px;
+    /* @media (max-width:424px) {
+        flex-direction: column;  
+    } */
+    .hr{
+        @media (max-width:424px) {
+            display: none;
+        }
+    }
     a{
         margin-left: -25px;
         text-decoration: none;

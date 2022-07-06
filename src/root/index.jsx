@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-// import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../components/Home";
 import About from "../components/About";
 import Service from "../components/Service";
@@ -18,14 +17,14 @@ const Root = () => {
 			<Navbar></Navbar>
             <Home/>
             <About/>
-            {/* <Service/> */}
-            {/* <Skill/> */}
-            {/* <Testimonial/> */}
+            <Service/>  
+            {/* <Skill/>   */}
+            <Testimonial/>  
             <Team/>
             <Contact/>
             <Blog/>
             <FooterTop/>
-            {/* <Footer/> */}
+            <Footer/>
 		</div>
 	);
 };

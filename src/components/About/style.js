@@ -59,6 +59,16 @@ const RightWrap =styled.div`
         
         
     }
+    div{
+        @media (max-width: 450px) {
+           margin-left: 15px;
+        }
+    }
+    /* span{
+        @media (max-width:450px) {
+            display: none;
+        }
+    } */
     h1{
         color: black;
         width: 550px;
@@ -150,6 +160,9 @@ const Items  =styled.div`
     }
     @media(max-width:540px){
         width: 300px;
+    }
+    @media (max-width:400px) {
+        margin-left: 15px;
     }
 `
 Items.Item=styled.span`

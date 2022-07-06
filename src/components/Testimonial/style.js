@@ -5,27 +5,39 @@ import { ReactComponent as star } from "../../assets/icon/star.svg";
 
 
 const Container = styled.div`
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 790px;
-    margin-left: 95px;
     width: 100%;
-    height: 100px;
-    @media screen and (max-width:1366px){
-        margin-left: 0px;
-        margin-bottom: 600px;
+    height: fit-content;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    @media screen and (max-width:1365px){
+        height: 1300px;
+    }
+    @media screen and (max-width:690px){
+        height: 1300px;
+    }
+    @media(max-width:670px){
+        height: 800px;
+    }
+    @media(max-width:670px){
+        height: 800px;
+    }
+    @media(max-width:570px){
+        height: 650px;
     }
 `
 const Wrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex;    
     height: 700px;
-    width: 1440px;
-    @media screen and (max-width:1366px){
-    max-width: 1200px;
+    margin-left: 60px; 
+    margin-top:50px;
+    /* width: 1440px; */
+    @media screen and (max-width:1365px){
+        flex-direction: column;
+        margin-left: 0;  
+
     }
+
 `
 const Description = styled.div`
     display: flex;
@@ -36,6 +48,10 @@ const Description = styled.div`
 Description.Title = styled.div`
     .small-description{
         color: var(--primaryColor);
+        /* @media(max-width:800px){
+            margin:0 0 0 10%
+        } */
+       
     }
     .hr{
         width: 200px;
@@ -43,13 +59,36 @@ Description.Title = styled.div`
         background-color: var(--primaryColor);
         border-radius: 3px;
     }
+    .title{
+        @media(max-width:800px){
+            font-size:25px;
+        }
+        @media(max-width:670px){
+            font-size:20px;
+        }
+        @media(max-width:570px){
+            font-size: 16px;
+        }
+    }
     .description{
         margin-top: 30px;
-        width: 600px;
+        width: 600px;     
+        @media(max-width:670px){
+            font-size:18px;
+            width: 450px;
+        }
+        @media(max-width:570px){
+            font-size: 15px;
+            width: 300px;
+        }
     }
 `
 
-Description.Card = styled.div``
+Description.Card = styled.div`
+    @media(max-width:670px){
+        display: none;
+    }
+`
 
 const WrapCar = styled.div`
   margin: 50px 0px;
@@ -89,19 +128,19 @@ padding: 20px;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
-  }
+}
 `
 
 const Title = styled.div`
-width: 200px;
+    width: 200px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 `
 Title.Img = styled.img`
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    
 `
 
 Title.Des = styled.div`
@@ -109,12 +148,10 @@ Title.Des = styled.div`
     flex-direction: column;
     justify-content: center;
     margin-left: 10px;
+    
     .small-description{
         position: relative;
-        top: 15px;
-        @media screen and (max-width:1366px){
-            top: 8px;
-        }
+        top: 15px;        
     }
     .sub-title{
         color:var(--primaryColor) ;
@@ -146,19 +183,17 @@ const Star = styled(star)`
 `
 
 const Teacher = styled.div`
-    margin-right: 80px;
+    text-align: center;
     img{
         margin-top: 85px;
-    @media screen and (max-width:1366px){
         width: 600px;
-        margin-top: 0px;
-        margin-bottom: 150px;
-    }
-    @media screen and (max-width:1366px){
-        width: 600px;
-        margin-top: 0px;
-        margin-bottom: 150px;
-    }
+        margin-top: 0;
+        @media screen and (max-width:690px){
+            width: 500px;
+        }
+        @media(max-width:570px){
+            width: 300px;
+        }
     }
 `
 

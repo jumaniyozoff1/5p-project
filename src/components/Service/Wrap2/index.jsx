@@ -1,4 +1,3 @@
-
 import React from "react";
 import Img from "../../../assets/img/will.png";
 import { Block, Container, ImgBlock, Wrapper } from "./style";
@@ -16,7 +15,7 @@ const Warp2 = () => {
           <div className="border"></div>
           <br />
           <br />
-          <div className="description">
+          <div className="description dec">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected this
             humour, or randomised words which don't look believable.
@@ -25,30 +24,30 @@ const Warp2 = () => {
           <br />
           <Wrapper.Item.II>
             <Wrapper.Item>
-              <div className="sub-title">32+ Year Of</div>
-              <div className="description">Business Experience</div>
+              <div className="sub-title title-two">32+ Year Of</div>
+              <div className="description des2">Business Experience</div>
             </Wrapper.Item>
             <Wrapper.Item>
-              <div className="sub-title">Live-support</div>
-              <div className="description">24 hours fitnes</div>
+              <div className="sub-title title-two">Live-support</div>
+              <div className="description des2">24 hours fitnes</div>
             </Wrapper.Item>
           </Wrapper.Item.II>
           <br />
           <br />
           <Wrapper.Item.II>
             <Wrapper.Item>
-              <div className="sub-title">Company Data</div>
-              <div className="description">Privately Owned</div>
+              <div className="sub-title title-two">Company Data</div>
+              <div className="description des2">Privately Owned</div>
             </Wrapper.Item>
             <Wrapper.Item>
-              <div className="sub-title">Business History</div>
-              <div className="description">Company Magarment</div>
+              <div className="sub-title title-two">Business History</div>
+              <div className="description des2">Company Magarment</div>
             </Wrapper.Item>
           </Wrapper.Item.II>
           <div className="line"></div>
         </Block>
         <ImgBlock>
-          <img src={Iimg} className="img" />
+          <img src={Iimg} className="img-one" />
           <img src={Img} alt="" />
         </ImgBlock>
       </Wrapper>

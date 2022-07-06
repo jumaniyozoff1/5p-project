@@ -1,11 +1,8 @@
 import styled from "styled-components";
-import AliceCarousel from "react-alice-carousel";
 
 const Card = styled.div`
   width: 370px;
   height: 382px;
-  position: relative;
-  left: 55px;
   .card_text {
     margin-top: 20px;
     color: white;
@@ -31,6 +28,11 @@ const Container = styled.div`
   .title {
     width: 600px;
     line-height: 50px;
+    @media (max-width:630px){
+      width: 300px;
+      font-size: 25px;
+    }
+
   }
   .color {
     margin-bottom: 20px;
@@ -53,29 +55,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   user-select: none;
-  .alice-carousel {
-    width: 100%;
-  }
-  .alice-carousel__dots-item {
-    background: #ff491758;
-    border-radius: 0%;
-    width: 10px;
-    height: 10px;
-    &:hover {
-      background: var(--primaryColor);
-    }
-  }
-  .alice-carousel__dots-item.__active {
-    background: var(--primaryColor);
-    border-radius: 0%;
-  }
 `;
-const Carousel = styled(AliceCarousel)`
-  display: flex;
-  width: 100%;
-  user-select: none;
-`;
-
 const Texts = styled.div`
   display: flex;
   flex-direction: column;
@@ -118,4 +98,4 @@ const Border = styled.div`
   top: 360px;
 `;
 
-export { Container, Carousel, Wrapper, Card, Imgs, Texts, Text, Border };
+export { Container, Wrapper, Card, Imgs, Texts, Text, Border };

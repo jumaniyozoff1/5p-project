@@ -1,6 +1,9 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { ReactComponent as navlogo } from "../../assets/icon/navlogo.svg";
+import { ReactComponent as navlogo2 } from "../../assets/icon/navlogo.svg";
+import { ReactComponent as navMenu } from "../../assets/icon/navMenu.svg";
+
 
 const Container = styled.div`
 	position: fixed;
@@ -49,6 +52,33 @@ const Wrapper = styled.div`
 	line-height: 24px;
 	width: 100%;
 	color: #ffffff;
+	@media (max-width: 980px){
+		padding: 0 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+	button{
+		height: 50px;
+		width: 180px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-style: normal;
+		font-weight: 600;
+		border-radius: 2px;
+		font-size: 14px;
+		background-color: var(--primaryColor);
+		border: none;
+		transition-duration: 0.5s;
+		&:hover{
+			background-color: #212529;
+		}
+		@media (max-width: 980px){
+			width: 100px;
+			height: 40px;
+		}
+
+	}
 `;
 
 const LinkSection = styled.div`
@@ -62,6 +92,24 @@ const LinkSection = styled.div`
 
 const Navlogo = styled(navlogo)`
 	cursor: pointer;
+	text-align: center;
+	@media (max-width: 980px){
+		display: none;
+	}
 `;
+const Navlogo2 = styled(navlogo2)`
+	cursor: pointer;
+	text-align: center;
+	display: none;
+	@media (max-width: 980px){
+		display: flex;
+	}
+`;
+const NavMenu =styled(navMenu)`
+	display: none;
+	@media (max-width: 980px){
+		display: flex;
+	}
+`
 
-export { Container, Header, Navlink, Wrapper, LinkSection, Navlogo };
+export { Container, Header, Navlink, Wrapper, LinkSection, Navlogo,Navlogo2,NavMenu };

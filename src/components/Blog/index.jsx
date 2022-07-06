@@ -39,181 +39,181 @@ const Blog = () => {
 					enableMouseSwipe={true}   
 					// showArrows={false} 
 					>
-				<Card >
-					<Btn>
-						<Button width={"150px"} type={"primary"}>
-							Development
-						</Button>
-					</Btn>
-					<Imgs src={Desingn} />
-					<Title>
-						<Title.Description>
-							<h1 className="small-description">
-								Where people develop the own potential
-							</h1>
-							<p className="description">
-								Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit.
-							</p>
-						</Title.Description>
-						<hr />
-						<Title.Footer>
-							<p className="description active">Admin</p>
-							<p className="description">06 Jun, 2022</p>
-							<p className="description active">0 Comments</p>
-						</Title.Footer>
-					</Title>
-				</Card>
-				<Card >
-					<Btn>
-						<Button width={"150px"} type={"primary"}>
-							Development
-						</Button>
-					</Btn>
-					<Imgs src={Desingn} />
-					<Title>
-						<Title.Description>
-							<h1 className="small-description">
-								Where people develop the own potential
-							</h1>
-							<p className="description">
-								Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit.
-							</p>
-						</Title.Description>
-						<hr />
-						<Title.Footer>
-							<p className="description active">Admin</p>
-							<p className="description">06 Jun, 2022</p>
-							<p className="description active">0 Comments</p>
-						</Title.Footer>
-					</Title>
-				</Card>
-				<Card >
-					<Btn>
-						<Button width={"150px"} type={"primary"}>
-							Development
-						</Button>
-					</Btn>
-					<Imgs src={Desingn} />
-					<Title>
-						<Title.Description>
-							<h1 className="small-description">
-								Where people develop the own potential
-							</h1>
-							<p className="description">
-								Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit.
-							</p>
-						</Title.Description>
-						<hr />
-						<Title.Footer>
-							<p className="description active">Admin</p>
-							<p className="description">06 Jun, 2022</p>
-							<p className="description active">0 Comments</p>
-						</Title.Footer>
-					</Title>
-				</Card>
-				<Card >
-					<Btn>
-						<Button width={"150px"} type={"primary"}>
-							Development
-						</Button>
-					</Btn>
-					<Imgs src={Desingn} />
-					<Title>
-						<Title.Description>
-							<h1 className="small-description">
-								Where people develop the own potential
-							</h1>
-							<p className="description">
-								Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit.
-							</p>
-						</Title.Description>
-						<hr />
-						<Title.Footer>
-							<p className="description active">Admin</p>
-							<p className="description">06 Jun, 2022</p>
-							<p className="description active">0 Comments</p>
-						</Title.Footer>
-					</Title>
-				</Card>
-				<Card >
-					<Btn>
-						<Button width={"150px"} type={"primary"}>
-							Development
-						</Button>
-					</Btn>
-					<Imgs src={ItServis} />
-					<Title>
-						<Title.Description>
-							<h1 className="small-description">
-								Where people develop the own potential
-							</h1>
-							<p className="description">
-								Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit.
-							</p>
-						</Title.Description>
-						<hr />
-						<Title.Footer>
-							<p className="description active">Admin</p>
-							<p className="description">06 Jun, 2022</p>
-							<p className="description active">0 Comments</p>
-						</Title.Footer>
-					</Title>
-				</Card>
-				<Card >
-					<Btn>
-						<Button width={"150px"} type={"primary"}>
-							Development
-						</Button>
-					</Btn>
-					<Imgs src={Development} />
-					<Title>
-						<Title.Description>
-							<h1 className="small-description">
-								Where people develop the own potential
-							</h1>
-							<p className="description">
-								Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit.
-							</p>
-						</Title.Description>
-						<hr />
-						<Title.Footer>
-							<p className="description active">Admin</p>
-							<p className="description">06 Jun, 2022</p>
-							<p className="description active">0 Comments</p>
-						</Title.Footer>
-					</Title>
-				</Card>
-				<Card>
-					<Btn>
-						<Button className="btns" width={"150px"} type={"primary"}>
-							Development
-						</Button>
-					</Btn>
-					<Imgs src={Desingn} />
-					<Title>
-						<Title.Description>
-							<h1 className="small-description">
-								Where people develop the own potential
-							</h1>
-							<p className="description">
-								Lorem ipsum dolor, sit amet consectetur adipisicing
-								elit.
-							</p>
-						</Title.Description>
-						<hr />
-						<Title.Footer>
-							<p className="description active">Admin</p>
-							<p className="description">06 Jun, 2022</p>
-							<p className="description active">0 Comments</p>
-						</Title.Footer>
-					</Title>
-				</Card>			
+					<Card >
+						<Btn>
+							<Button width={"150px"} type={"primary"}>
+								Development
+							</Button>
+						</Btn>
+						<Imgs src={Desingn} />
+						<Title>
+							<Title.Description>
+								<h1 className="small-description">
+									Where people develop the own potential
+								</h1>
+								<p className="description">
+									Lorem ipsum dolor, sit amet consectetur adipisicing
+									elit.
+								</p>
+							</Title.Description>
+							<hr />
+							<Title.Footer>
+								<p className="description active">Admin</p>
+								<p className="description">06 Jun, 2022</p>
+								<p className="description active">0 Comments</p>
+							</Title.Footer>
+						</Title>
+					</Card>
+					<Card >
+						<Btn>
+							<Button width={"150px"} type={"primary"}>
+								Development
+							</Button>
+						</Btn>
+						<Imgs src={Desingn} />
+						<Title>
+							<Title.Description>
+								<h1 className="small-description">
+									Where people develop the own potential
+								</h1>
+								<p className="description">
+									Lorem ipsum dolor, sit amet consectetur adipisicing
+									elit.
+								</p>
+							</Title.Description>
+							<hr />
+							<Title.Footer>
+								<p className="description active">Admin</p>
+								<p className="description">06 Jun, 2022</p>
+								<p className="description active">0 Comments</p>
+							</Title.Footer>
+						</Title>
+					</Card>
+					<Card >
+						<Btn>
+							<Button width={"150px"} type={"primary"}>
+								Development
+							</Button>
+						</Btn>
+						<Imgs src={Desingn} />
+						<Title>
+							<Title.Description>
+								<h1 className="small-description">
+									Where people develop the own potential
+								</h1>
+								<p className="description">
+									Lorem ipsum dolor, sit amet consectetur adipisicing
+									elit.
+								</p>
+							</Title.Description>
+							<hr />
+							<Title.Footer>
+								<p className="description active">Admin</p>
+								<p className="description">06 Jun, 2022</p>
+								<p className="description active">0 Comments</p>
+							</Title.Footer>
+						</Title>
+					</Card>
+					<Card >
+						<Btn>
+							<Button width={"150px"} type={"primary"}>
+								Development
+							</Button>
+						</Btn>
+						<Imgs src={Desingn} />
+						<Title>
+							<Title.Description>
+								<h1 className="small-description">
+									Where people develop the own potential
+								</h1>
+								<p className="description">
+									Lorem ipsum dolor, sit amet consectetur adipisicing
+									elit.
+								</p>
+							</Title.Description>
+							<hr />
+							<Title.Footer>
+								<p className="description active">Admin</p>
+								<p className="description">06 Jun, 2022</p>
+								<p className="description active">0 Comments</p>
+							</Title.Footer>
+						</Title>
+					</Card>
+					<Card >
+						<Btn>
+							<Button width={"150px"} type={"primary"}>
+								Development
+							</Button>
+						</Btn>
+						<Imgs src={ItServis} />
+						<Title>
+							<Title.Description>
+								<h1 className="small-description">
+									Where people develop the own potential
+								</h1>
+								<p className="description">
+									Lorem ipsum dolor, sit amet consectetur adipisicing
+									elit.
+								</p>
+							</Title.Description>
+							<hr />
+							<Title.Footer>
+								<p className="description active">Admin</p>
+								<p className="description">06 Jun, 2022</p>
+								<p className="description active">0 Comments</p>
+							</Title.Footer>
+						</Title>
+					</Card>
+					<Card >
+						<Btn>
+							<Button width={"150px"} type={"primary"}>
+								Development
+							</Button>
+						</Btn>
+						<Imgs src={Development} />
+						<Title>
+							<Title.Description>
+								<h1 className="small-description">
+									Where people develop the own potential
+								</h1>
+								<p className="description">
+									Lorem ipsum dolor, sit amet consectetur adipisicing
+									elit.
+								</p>
+							</Title.Description>
+							<hr />
+							<Title.Footer>
+								<p className="description active">Admin</p>
+								<p className="description">06 Jun, 2022</p>
+								<p className="description active">0 Comments</p>
+							</Title.Footer>
+						</Title>
+					</Card>
+					<Card>
+						<Btn>
+							<Button className="btns" width={"150px"} type={"primary"}>
+								Development
+							</Button>
+						</Btn>
+						<Imgs src={Desingn} />
+						<Title>
+							<Title.Description>
+								<h1 className="small-description">
+									Where people develop the own potential
+								</h1>
+								<p className="description">
+									Lorem ipsum dolor, sit amet consectetur adipisicing
+									elit.
+								</p>
+							</Title.Description>
+							<hr />
+							<Title.Footer>
+								<p className="description active">Admin</p>
+								<p className="description">06 Jun, 2022</p>
+								<p className="description active">0 Comments</p>
+							</Title.Footer>
+						</Title>
+					</Card>			
 				</Carousel>
 			</Wrapper>
 		</Container>

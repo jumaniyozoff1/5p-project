@@ -76,6 +76,11 @@ const Wrapper = styled.div`
   /* width: 1440px; */
   /* position: relative; */
   height: fit-content;
+  button{
+    @media (max-width:570px){
+        display: none;
+    }
+  }
 `
 const Carousel = styled(AliceCarousel)`
     display: flex;

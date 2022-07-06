@@ -5,10 +5,12 @@ import {
 	LinkSection,
 	Navlink,
 	Navlogo,
+	Navlogo2,
+	NavMenu,
 	Wrapper,
 } from "./style";
 import { navbar } from "../../utils/navbar";
-import Button from "../../Generic/Button";
+// import Button from "../../Generic/Button";
 import { useNavigate, Outlet } from "react-router-dom";
 
 const Navbar = () => {
@@ -29,8 +31,10 @@ const Navbar = () => {
 		<Container>
 			<Header>
 				<Wrapper>
+					<NavMenu/>
 					<Navlogo onClick={() => navigate("/home")}></Navlogo>
 					<LinkSection>
+						<Navlogo2 onClick={() => navigate("/home")}/>
 						{navbar.map(({ id, title, path }) => {
 							return (
 								<Navlink
@@ -43,9 +47,7 @@ const Navbar = () => {
 							);
 						})}
 					</LinkSection>
-					<Button height={"50px"} width={"180px"} type={"primary"}>
-						Discover More
-					</Button>
+					<button>Discover More</button>
 				</Wrapper>
 			</Header>
 			<main>
