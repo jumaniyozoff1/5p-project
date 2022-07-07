@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { ReactComponent as navlogo } from "../../assets/icon/navlogo.svg";
 import { ReactComponent as navlogo2 } from "../../assets/icon/navlogo.svg";
 import { ReactComponent as navMenu } from "../../assets/icon/navMenu.svg";
+import { ReactComponent as xmenu } from "../../assets/icon/xmenu.svg";
 
 
 const Container = styled.div`
@@ -11,7 +12,13 @@ const Container = styled.div`
 	top: 0;
 	left: 0;
 	z-index: 1000;
-	
+	/* .linksection{
+		border: 1px solid red;
+		width: 100%;
+		height: 100vh;
+		color: black;
+		background-color: red;
+	} */
 `;
 
 const Header = styled.header`
@@ -107,9 +114,17 @@ const Navlogo2 = styled(navlogo2)`
 `;
 const NavMenu =styled(navMenu)`
 	display: none;
+	cursor: pointer;
+	@media (max-width: 980px){
+		display: flex;
+	}
+`
+const Xmenu =styled(xmenu)`
+	display: none;
+	cursor: pointer;
 	@media (max-width: 980px){
 		display: flex;
 	}
 `
 
-export { Container, Header, Navlink, Wrapper, LinkSection, Navlogo,Navlogo2,NavMenu };
+export { Container, Header, Navlink, Wrapper, LinkSection, Navlogo,Navlogo2,NavMenu,Xmenu };

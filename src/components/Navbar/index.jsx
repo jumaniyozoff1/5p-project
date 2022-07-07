@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import {
 	Container,
 	Header,
@@ -8,6 +8,7 @@ import {
 	Navlogo2,
 	NavMenu,
 	Wrapper,
+	Xmenu,
 } from "./style";
 import { navbar } from "../../utils/navbar";
 // import Button from "../../Generic/Button";
@@ -15,6 +16,7 @@ import { useNavigate, Outlet } from "react-router-dom";
 
 const Navbar = () => {
 	const navigate = useNavigate();
+	const [menuOpen,setmenuOpen] =useState(true)
 
 	const goTo = (e, path) => {
 		e.preventDefault();
@@ -26,14 +28,16 @@ const Navbar = () => {
 			behavior: "smooth",
 		});
 	};
-
+	const Submit =()=>{
+		setmenuOpen((p)=> !p)
+	}
 	return (
 		<Container>
 			<Header>
-				<Wrapper>
-					<NavMenu/>
+				<Wrapper>	
+					{menuOpen ? <NavMenu onClick={Submit}/> : <Xmenu onClick={Submit}/>}
 					<Navlogo onClick={() => navigate("/home")}></Navlogo>
-					<LinkSection>
+					<LinkSection >
 						<Navlogo2 onClick={() => navigate("/home")}/>
 						{navbar.map(({ id, title, path }) => {
 							return (
@@ -47,7 +51,7 @@ const Navbar = () => {
 							);
 						})}
 					</LinkSection>
-					<button>Discover More</button>
+					<button >Discover More</button>
 				</Wrapper>
 			</Header>
 			<main>
