@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './style';
 
-const Button = ({ width, height, type, mt, mb, mr, ml, onClick, children }) => {
+const Button = ({ disabled,width, height, type, mt, mb, mr, ml, onClick, children }) => {
 	return (
 		<Container
 			width={width}
@@ -12,6 +12,7 @@ const Button = ({ width, height, type, mt, mb, mr, ml, onClick, children }) => {
 			mr={mr}
 			ml={ml}
 			onClick={onClick}
+			disabled={disabled}
 		>
 			{children}
 		</Container>

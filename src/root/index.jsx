@@ -18,11 +18,9 @@ const Root = () => {
             <Home/>
             <About/>
             <Service/>  
-            {/* <Skill/>   */}
             <Testimonial/>  
             <Team/>
             <Contact/>
-            <Blog/>
             <FooterTop/>
             <Footer/>
 		</div>
