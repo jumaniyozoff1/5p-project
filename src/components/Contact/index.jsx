@@ -6,16 +6,12 @@ import { useQuery, useMutation } from "react-query";
 
 
 const Contact = ()=> {
-	
-	state={
-		email:''
-	}
 	const nameRef = useRef("");
 	const companyNameRef = useRef("");
 	const phoneNumberRef = useRef("");
 	const [atribut ,setatribut] =useState(true)
-	const click = ()=>{
-		if(nameRef.current.value.length >= 1){
+	const change = ()=>{
+		if(nameRef.current.value.length >= 1 && companyNameRef.current.value.length >=1 && phoneNumberRef.current.value.length >=1){
 			setatribut(!true) 
 		}
 	}
@@ -33,7 +29,10 @@ const Contact = ()=> {
 			return res.json;
 		},
 		{
-			onSuccess: (res) => {},
+			onSuccess: (res) => {
+				console.log(res=> res.JSON.stringify());
+
+			},
 			onError: (err) => {},
 		}
 	);
@@ -45,13 +44,13 @@ const Contact = ()=> {
 			<Container className="contact">
 				<Wrapper>
 					<Register>
-						<input ref={nameRef} placeholder="Ism Familiya" type="text"/>
-						<input ref={companyNameRef} placeholder="Kompaniya yoki firmangiz nomi" type="text"/>
-						<input ref={phoneNumberRef} placeholder="Telefon raqamingiz" type="text" />
-						<Button disabled={!nameRef && !companyNameRef && !phoneNumberRef} onClick={onSubmit} type={"primary"}>
+						<input onChange={change} ref={nameRef} placeholder="Ism Familiya" type="text"/>
+						<input onChange={change} ref={companyNameRef} placeholder="Kompaniya yoki firmangiz nomi" type="text"/>
+						<input onChange={change} ref={phoneNumberRef} placeholder="Telefon raqamingiz" type="text" />
+						<Button disabled={atribut}  onClick={onSubmit}  type={'primary'}>
 							Send Request
 						</Button>
-						<button onClick={click}   className="btn" disabled={atribut}>get</button>
+						{/* <button  className="btn" >get</button> */}
 					</Register>
 					<Img src={Registerimg}></Img>
 				</Wrapper>

@@ -51,6 +51,13 @@ const Register = styled.div`
       height: 40px;
       font-size: 15px;
     }
+    .btn{
+      height: 50px;
+      background-color: aqua;
+      /* :disabled{
+        background-color: red;
+      } */
+    }
   }
   textarea{
     border: 1px solid #ddd;
