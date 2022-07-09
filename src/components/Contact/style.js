@@ -51,7 +51,7 @@ const Register = styled.div`
       height: 40px;
       font-size: 15px;
     }
-    .btn{
+    button{
       height: 50px;
       background-color: aqua;
       /* :disabled{
