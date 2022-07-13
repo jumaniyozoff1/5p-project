@@ -51,12 +51,12 @@ const About = () => {
 						<p className="description we">We provides you with </p>
 					</Items.Item>
 				</Items>
-				<div>
+				{/* <div>
 					<span></span>
 					<Button type={"primary"} width={"180px"} className='btn'>
 						About More
 					</Button>
-				</div>
+				</div> */}
 			</RightWrap>
 		</Container>
 	);

@@ -4,8 +4,6 @@ import Service from "../components/Service";
 import Testimonial from "../components/Testimonial";
 import Team from "../components/Team";
 import Contact from "../components/Contact";
-import Blog from "../components/Blog";
-import Skill from "../components/Skill";
 
 export const navbar = [
 	{
@@ -35,17 +33,8 @@ export const navbar = [
 		hidden: false,
 		private: true,
 	},
-	// {
-	// 	id: 4,
-	// 	title: "Skill",
-	// 	element: <Skill />,
-	// 	path: ".skill",
-	// 	search: "?",
-	// 	hidden: false,
-	// 	private: true,
-	// },
 	{
-		id: 5,
+		id: 4,
 		title: "Testimonial",
 		path: ".testimonial",
 		element: <Testimonial />,
@@ -54,7 +43,7 @@ export const navbar = [
 		private: true,
 	},
 	{
-		id: 6,
+		id: 5,
 		title: "Team",
 		path: ".team",
 		element: <Team />,
@@ -63,7 +52,7 @@ export const navbar = [
 		private: true,
 	},
 	{
-		id: 7,
+		id: 6,
 		title: "Contact",
 		path: ".contact",
 		element: <Contact />,

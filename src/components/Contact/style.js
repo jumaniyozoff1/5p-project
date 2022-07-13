@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 const Container = styled.div`
   /* position: relative; */
@@ -51,13 +50,6 @@ const Register = styled.div`
       height: 40px;
       font-size: 15px;
     }
-    button{
-      height: 50px;
-      background-color: aqua;
-      /* :disabled{
-        background-color: red;
-      } */
-    }
   }
   textarea{
     border: 1px solid #ddd;
@@ -81,7 +73,23 @@ const Img = styled.img`
       font-size: 15px;
     }
 `
+const Button =styled.button`
+  height: 30px;
+  background-color: var(--primaryColor);
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+  opacity: 1;
+  &:disabled{
+    /* background-color: var(--secondaryColor); */
+    opacity: 0.4;
+
+  }
+  &:active{
+  }
+`
 
 
 
-export  {Container,Wrapper,Register,Img}
+export  {Container,Wrapper,Register,Img,Button}

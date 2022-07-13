@@ -14,6 +14,7 @@ const getType = (type) => {
 };
 
 const Container = styled.button`
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -29,9 +30,8 @@ const Container = styled.button`
 	margin-right: ${({ mr }) => `${mr}px`};
 	margin-left: ${({ ml }) => `${ml}px`};
 	${({ type }) => getType(type)}
-	cursor: pointer;
     transition-duration: 0.5s;
-    &:hover{
+    &:focus{
         background-color: #212529;
     }
 `;

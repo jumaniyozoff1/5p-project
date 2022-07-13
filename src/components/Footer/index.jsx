@@ -45,10 +45,11 @@ const Footer = () => {
           </div>
           <div>
             <h1 className="title color">
-              Recent Posts <br />
+              Created <br />
             </h1>
             <Item>
-              <div className="his">
+              Created by ASTIX 
+              {/* <div className="his">
                 <SmallLogo src={Des} className="s" />{" "}
                 <h1 className="title color">
                   Seminar for Best Marketing Strategy.
@@ -59,7 +60,7 @@ const Footer = () => {
                 <h1 className="title color">
                   Seminar for Best Marketing Strategy.
                 </h1>
-              </div>
+              </div> */}
             </Item>
           </div>
         </div>

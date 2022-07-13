@@ -28,9 +28,9 @@ const Corusel = () => {
 					Harum porro est expedita dolorem suscipit eos, placeat
 					provident{" "}
 				</h2>
-				<Button width={"150px"} type={"primary"}>
+				{/* <Button width={"150px"} type={"primary"}>
 					Descover More
-				</Button>
+				</Button> */}
 				
 			</Title>
 			</TitleWrap>
@@ -53,9 +53,9 @@ const Corusel = () => {
 							While building out a new website you literally no
 							idea of where to start.
 						</p>
-						<span>
+						{/* <span>
 							<a href="#">Read More</a><Icons.Arrow/>
-						</span>
+						</span> */}
 					</Card.Item>
 				</Card>
 				<Card>
@@ -66,9 +66,9 @@ const Corusel = () => {
 							While building out a new website you literally no
 							idea of where to start.
 						</p>
-						<span>
+						{/* <span>
 							<a href="#">Read More</a><Icons.Arrow/>
-						</span>
+						</span> */}
 					</Card.Item>
 				</Card>
 				<Card>
@@ -79,9 +79,9 @@ const Corusel = () => {
 							While building out a new website you literally no
 							idea of where to start.
 						</p>
-						<span>
+						{/* <span>
 							<a href="#">Read More</a><Icons.Arrow/>
-						</span>
+						</span> */}
 					</Card.Item>
 				</Card>
 			</CardSection>

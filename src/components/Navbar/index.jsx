@@ -38,14 +38,17 @@ const Navbar = () => {
 						<LinkSection.Body className={`${menuOpen ? "open" : ""}`}>
 							{navbar.map(({ id, title, path }) => {
 								return (
-									<Navlink onClick={(e) => goTo(e, path)} key={id}>
-										{title}
-									</Navlink>
+									<div> 
+										<Navlink onClick={(e) => goTo(e, path)} key={id}>
+											{title}
+										</Navlink>
+									</div>
 								);
 							})}
 						</LinkSection.Body>
 					</LinkSection>
-					<button>Discover More</button>
+					<h3>logo</h3>
+					{/* <button>Discover More</button> */}
 				</Wrapper>
 			</Header>
 		</Container>

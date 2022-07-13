@@ -1,79 +1,6 @@
-// import React,{useRef, useState} from 'react'
-// import {Container,Wrapper,Register,Img,} from './style'
-// import Registerimg from '../../assets/img/register.jpg'
-// import Button from '../../Generic/Button'
-// import { useQuery,useMutation } from 'react-query'
-
-
-// const Contact = () => {
-//   const [name, setName] = useState('')
-//   const [companyName, setcompanyName] = useState('')
-//   const [phoneNumber, setphoneNumber] = useState('')
-//   const [disable, setDisable] = useState(true)
-
-//   const {mutate} = useMutation(async ()=>{
-//     const res = await fetch(``, {
-//     method: 'POST', headers: { 'Content-type': 'application/json' },
-//       body: JSON.stringify({ name: name.current.value, componyName: companyName.current.value, phoneNumber: phoneNumber.current.value })
-//     });
-//     return res.json; 
-//   },
-//   {
-//     onSuccess:(res)=>{
-
-//     },
-//     onError: (err)=>{
-//       console.log(err)
-//     }
-//   })
-
-//   const func =()=>{
-//     if(name.length >= 1  ){
-//       setDisable(false)
-//     }
-//     else{
-//       setDisable(true)
-//     }
-//   }
-//   return (
-//     <Container>
-//       <Wrapper>
-//         <Register>
-//           <input onChange={(e)=>{setName(e.target.value)}}  placeholder='Ism' type="text" />
-//           <input  placeholder='Familiya' type="text" />
-//           <input  placeholder='Kompaniya yoki firmangiz nomi' type="text" />
-//           <input placeholder='Telefon raqamingiz' type="text" />
-//           {/* <textarea placeholder='Comments/Message' name="" id="" cols="30" rows="10" ></textarea> */}
-//           <Button type={'primary'}>Send Request</Button>
-//           <button disabled={disable} onClick={func}>get</button>
-//         </Register>
-//         <Img src={Registerimg}></Img>
-//       </Wrapper>
-//     </Container>
-//   )
-// }
-// export default Contact
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useRef,useState } from "react";
-import { Container, Wrapper, Register, Img } from "./style";
+import { Container, Wrapper, Register, Img, Button } from "./style";
 import Registerimg from "../../assets/img/register.jpg";
-import Button from "../../Generic/Button";
 import { useQuery, useMutation } from "react-query";
 
 
@@ -123,9 +50,7 @@ const Contact = ()=> {
 						<input onChange={change} ref={nameRef} placeholder="Ism Familiya" type="text"/>
 						<input onChange={change} ref={companyNameRef} placeholder="Kompaniya yoki firmangiz nomi" type="text"/>
 						<input onChange={change} ref={phoneNumberRef} placeholder="Telefon raqamingiz" type="text" />
-						<button disabled={atribut}  onClick={onSubmit}  type={'primary'}>
-							Send Request
-						</button>
+						<Button disabled={atribut}  onClick={onSubmit}>Send Request</Button>
 					</Register>
 					<Img src={Registerimg}></Img>
 				</Wrapper>
