@@ -1,12 +1,21 @@
 import styled from "styled-components";
+import Popup from 'reactjs-popup';
+
 const Container = styled.div`
-  /* position: relative; */
   margin-top: 100px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  .popup-content{
+    position: absolute;
+    z-index: 999;
+    pointer-events: auto;
+    top: 5437.77px;
+    left: 0px;
+
+  }
  
 `
 
@@ -89,7 +98,23 @@ const Button =styled.button`
   &:active{
   }
 `
+const Alert =styled(Popup)`
+  /* border: 1px solid red;
+  width: 500px;
+  height: 500px; */
+  /* element.style {
+    position: absolute;
+    z-index: 999;
+    pointer-events: auto;
+    top: 6520.39px;
+    left: 320px;
+  } */
+`
+const Xabar =styled.div`
+  font-size: 18px;
+  color: var(--primaryColor);
+  /* border: 1px solid red; */
+`
 
 
-
-export  {Container,Wrapper,Register,Img,Button}
+export  {Container,Wrapper,Register,Img,Button,Xabar,Alert}

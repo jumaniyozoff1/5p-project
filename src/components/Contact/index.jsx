@@ -1,7 +1,8 @@
 import React, { useRef,useState } from "react";
-import { Container, Wrapper, Register, Img, Button } from "./style";
+import { Container, Wrapper, Register, Img, Button, Xabar,Alert } from "./style";
 import Registerimg from "../../assets/img/register.jpg";
-import { useQuery, useMutation } from "react-query";
+import { useMutation } from "react-query";
+import 'reactjs-popup/dist/index.css';
 
 
 const Contact = ()=> {
@@ -50,7 +51,9 @@ const Contact = ()=> {
 						<input onChange={change} ref={nameRef} placeholder="Ism Familiya" type="text"/>
 						<input onChange={change} ref={companyNameRef} placeholder="Kompaniya yoki firmangiz nomi" type="text"/>
 						<input onChange={change} ref={phoneNumberRef} placeholder="Telefon raqamingiz" type="text" />
-						<Button disabled={atribut}  onClick={onSubmit}>Send Request</Button>
+						<Alert trigger={<Button disabled={atribut}  onClick={onSubmit}>Send Request</Button>} position="right center">
+							<Xabar>Xabaringiz muofaqiyatli yuborildi✔</Xabar>
+						</Alert>						
 					</Register>
 					<Img src={Registerimg}></Img>
 				</Wrapper>
