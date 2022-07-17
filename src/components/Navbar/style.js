@@ -93,7 +93,7 @@ LinkSection.Body = styled.div`
 		visibility: hidden;
 		background-color: var(--primaryColor);
 		left: 0;
-		width: 100vw;
+		width: 50vw;
 		height: 100%;
 		display: flex;
 		align-items: center;

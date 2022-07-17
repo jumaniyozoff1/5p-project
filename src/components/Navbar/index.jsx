@@ -22,7 +22,7 @@ const Navbar = () => {
 		closeMenu();
 		if (document.querySelector(path)) {
 			document.documentElement.scrollTo({
-				top: document.querySelector(path).getBoundingClientRect().top + window.scrollY - 100,
+				top: document.querySelector(path).getBoundingClientRect().top + window.scrollY -100,
 				behavior: "smooth",
 			});
 		}
@@ -48,7 +48,6 @@ const Navbar = () => {
 						</LinkSection.Body>
 					</LinkSection>
 					<h3>logo</h3>
-					{/* <button>Discover More</button> */}
 				</Wrapper>
 			</Header>
 		</Container>
