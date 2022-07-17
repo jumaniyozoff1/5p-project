@@ -71,6 +71,11 @@ const Register = styled.div`
     border-radius: 5px;
     height: 150px;
   }
+  .xabar{
+    text-align: center;
+    font-weight: 400;
+    color: green;
+  }
 `
 
 const Img = styled.img`
