@@ -124,12 +124,15 @@ const BorderName = styled.div`
     height: 70px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: #ffffff;
     overflow: hidden;
     position: absolute;
     user-select: none;
     .small-description{
+        width: 100%;
+        margin-left: auto;
         transition-duration: 1s;
         cursor: pointer;
         &:hover{
@@ -140,7 +143,7 @@ const BorderName = styled.div`
         }
     }
     .description{
-        @media screen and (max-width:1366px){
+     @media screen and (max-width:1366px){
             font-size: 12px;
         }
     }

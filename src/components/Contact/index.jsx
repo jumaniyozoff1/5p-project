@@ -50,7 +50,7 @@ const Contact = ()=> {
 					<Register>
 						<input onChange={change} ref={nameRef} placeholder="Ism Familiya" type="text"/>
 						<input onChange={change} ref={companyNameRef} placeholder="Kompaniya yoki firmangiz nomi" type="text"/>
-						<input onChange={change} ref={phoneNumberRef} placeholder="Telefon raqamingiz" type="text" />
+						<input onChange={change} ref={phoneNumberRef} placeholder="Telefon raqamingiz" type="text"/>
 						<Alert trigger={<Button disabled={atribut}  onClick={onSubmit}>Send Request</Button>} position="right center">
 							<Xabar>Xabaringiz muofaqiyatli yuborildi✔</Xabar>
 						</Alert>						

@@ -34,13 +34,12 @@ const Corusel = () => {
 				
 			</Title>
 			</TitleWrap>
-
 			<Icons>
 				<Icons.Left onClick={() => slider.current.prev()} />
 				<Icons.Right onClick={() => slider.current.next()} />
 			</Icons>
 			{/* <h1 className='home-title'>We Provide Best For It Solution For Business</h1> */}
-			<Container autoplay ref={slider}>
+			<Container  ref={slider}>
 				<Img src={HomeOne} />
 				<Img src={HomeTwo} />
 			</Container>
@@ -53,9 +52,6 @@ const Corusel = () => {
 							While building out a new website you literally no
 							idea of where to start.
 						</p>
-						{/* <span>
-							<a href="#">Read More</a><Icons.Arrow/>
-						</span> */}
 					</Card.Item>
 				</Card>
 				<Card>
@@ -66,9 +62,6 @@ const Corusel = () => {
 							While building out a new website you literally no
 							idea of where to start.
 						</p>
-						{/* <span>
-							<a href="#">Read More</a><Icons.Arrow/>
-						</span> */}
 					</Card.Item>
 				</Card>
 				<Card>
@@ -79,9 +72,6 @@ const Corusel = () => {
 							While building out a new website you literally no
 							idea of where to start.
 						</p>
-						{/* <span>
-							<a href="#">Read More</a><Icons.Arrow/>
-						</span> */}
 					</Card.Item>
 				</Card>
 			</CardSection>

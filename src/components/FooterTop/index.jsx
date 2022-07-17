@@ -15,10 +15,10 @@ const FooterTop = () => {
           <h1 className='title'>For Excellent Performance Focus on Critical.</h1>
           <Title.email>
             <Icon.Phone/>
-            <a className='small-description' href="#">(+01) 300176513 (21)</a>
+            <a className='small-description' href='(+01)300176513'>(+01) 300176513 (21)</a>
             <div className='hr'></div>
             <Icon.Email/>
-            <a className='small-description' href="#">info@Example.com</a>
+            <a className='small-description' href="info@Example.com">info@Example.com</a>
           </Title.email>
         </Title>
       </Wrapper>

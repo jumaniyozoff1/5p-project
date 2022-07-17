@@ -37,7 +37,7 @@ const Team = () => {
 					breakPoints ={breakPoints}
 					itemPadding={[0, 20]}
 					enableMouseSwipe={true}   
-					// showArrows={false} 
+					showArrows={false} 
 					>
 				<Card>
 					<Border>

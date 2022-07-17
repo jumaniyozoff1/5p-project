@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px 20px;
+	padding: 10px 40px;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
@@ -80,6 +80,9 @@ LinkSection.Body = styled.div`
 	align-items: center;
 	gap: 15px;
 	transition: all 0.4s ease 0s;
+	&:hover{
+		color: red;
+	}
 	@media (max-width: 980px) {
 		position: fixed;
 		top: 0;

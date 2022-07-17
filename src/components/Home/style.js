@@ -13,6 +13,11 @@ const Wrapper = styled.div`
     /* display: flex;
     align-items: center;
     justify-content: center; */
+    .slick-dots{
+        position: absolute;
+        bottom: 50px;
+    }
+    
 `
 const TitleWrap =styled.div`
     width: 100%;
@@ -84,44 +89,6 @@ const Title =styled.div`
             font-size: 15px;
             
         }
-        /* @media(max-width:980px){
-            font-size:22px;
-            position:relative;
-            left:50%;
-            transform: translate(-50%);
-            top:-10px;
-            text-align:center;
-
-        }
-        @media(max-width:800px){
-            margin:0px 0px 0px -10px;
-            position:relative;
-            left:50%;
-            transform: translate(-50%);
-            top:-10px;
-            text-align:center;
-        }
-        @media(max-width:700px){
-            margin:0px 0px 0px -50px;
-            position:relative;
-            left:50%;
-            transform: translate(-50%);
-            top:-10px;
-            text-align:center;
-            width:95%;
-            font-size:16px;
-        }
-      
-        @media(max-width:630px){
-            padding:0 500px 0 -300px;
-            position:relative;
-            left:50%;
-            transform: translate(-50%);
-            top:-10px;
-            text-align:center;
-            font-size:16px;
-            width:60%;
-        } */
     }
     span{
         width: fit-content;
@@ -134,74 +101,13 @@ const Title =styled.div`
             text-align: center;
 
         }
-        @media(max-width:660px){
-            /* width: 18px; */
-            
-        }
-        /* @media(max-width:980px){
-            font-size:20px;
-            position: relative;
-            left: 50%;
-            transform: translate(-50%);
-            top:20px;
-            
-        }
-        @media(max-width:800px){
-            position: relative;
-            left: 45%;
-            transform: translate(-50%);
-        }
-        @media(max-width:700px){
-            position: relative;
-            left: 40%;
-            transform: translate(-50%);
-            font-size:18px;
-        }
-        @media(max-width:600px){
-            position: relative;
-            left: 40%;
-            transform: translate(-50%);
-            font-size:16px;
-        }
-        @media(max-width:630px){
-            position: relative;
-            left: 38%;
-            transform: translate(-50%);
-            font-size:20px;
-            font-weight:900;
-            
-        } */
-
-    }
-    /* button{
-        @media(max-width:980px){
-            position: relative;
-            left: 50%;
-            transform: translate(-50%); 
-            font-size:17px;
-        }
-        @media(max-width:700px){
-            position: relative;
-            left: 40%;
-            transform: translate(-50%); 
-            font-size:17px; 
-        }
-        @media(max-width:500px){
-            position: relative;
-            left: 37%;
-            transform: translate(-50%); 
-            font-size:15px;
-            width:130px; 
-            height:35px;
-        }
-    } */
-    
+    }   
 `
 const Container = styled(Carousel)``
 
 const Icons = styled.div`
     position: absolute;
-    top: 30%;
+    top: 25%;
     z-index: 999;
     padding: 0 30px;
     width:100%;
@@ -335,9 +241,6 @@ Card.Item=styled.div`
         font-size: 18px;
         font-weight: 600;
         color: var(--primaryColor);
-        /* :hover{
-            color: black;
-        } */
     }
 `
 const Img = styled.img`
@@ -376,34 +279,6 @@ const CardSection=styled.div`
     @media (max-width:600px){
         padding: 0 50px;
     }
-    /* @media(max-width:1300px){
-
-        padding:0 25% 0 9%;     
-    }
-    @media(max-width:1100px){
-
-        padding:0 25% 0 4%;     
-    }
-    @media(max-width:1000px){
-        display:block;
-        padding:0 35%;     
-    }
-    @media(max-width:980px){
-        display:block;
-        padding:0 35%;     
-    }
-    @media(max-width:700px){
-        display:block;
-        padding:0 30%;     
-    }
-    @media(max-width:600px){
-        display:block;
-        padding:0 25%;     
-    }
-    @media(max-width:540px){
-        display:block;
-        padding:0 20%;     
-    } */
 
 `
 
@@ -423,7 +298,6 @@ Card.Item=styled.div`
     }
     @media(max-width:980px){
         padding: 200px 0px;
-        /* margin:; */
     }
 
 `

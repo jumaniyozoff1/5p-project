@@ -37,7 +37,6 @@ const Blog = () => {
 					breakPoints ={breakPoints}
 					itemPadding={[0, 20]}
 					enableMouseSwipe={true}   
-					// showArrows={false} 
 					>
 					<Card >
 						<Btn>
